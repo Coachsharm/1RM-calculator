@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1RM Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="header">
+      <h1 class="brand">Body Thrive</h1>
+      <h2>1RM Calculator</h2>
+    </div>
+    <div class="content">
+      <div class="input-section">
+        <div class="input-group">
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" placeholder="Enter weight">
+        </div>
+        <div class="input-group">
+          <label for="reps">Reps:</label>
+          <input type="number" id="reps" placeholder="Enter reps">
+        </div>
+        <button id="calculate">Calculate</button>
+      </div>
+      <div class="explanation">
+        <h3>How It Works</h3>
+        <p>The calculator uses the Epley formula:</p>
+        <p class="formula">1RM = w × (1 + r/30)</p>
+        <p>Where:</p>
+        <ul>
+          <li>w = weight lifted</li>
+          <li>r = number of reps</li>
+        </ul>
+        <p>This formula estimates your one-rep max based on how much weight you can lift for multiple reps.</p>
+      </div>
+    </div>
+    <div class="results">
+      <h2>Results:</h2>
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Rep Max</th>
+            <th>Weight (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
